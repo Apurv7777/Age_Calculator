@@ -13,16 +13,15 @@ body {
 }
 
 .card {
+    margin: 80px;
     color: whitesmoke;
-    width: 25%;
+    width: fit-content;
     background-color: rgb(89, 89, 89);
-    padding: 1rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: start;
     align-items: center;
-    height: 25vh;
-    margin-top: 15%;
+    height: auto;
     border-radius:20px;
     box-shadow: 10px 10px;
     cursor: pointer;
@@ -33,18 +32,39 @@ body {
     box-shadow:-10px -10px;
 }
 
-h1 {
-    padding: 1rem;
+@media (max-width: 768px) {
+    .heading{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0.8rem;
+    }
+    label,input{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0.3rem;
+    }
 }
 
-input {
-    margin: 1rem;
-}  
+.heading,h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.4rem;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
 
 button {
+    margin: 1rem;
     padding: 0.5rem;
     border-radius: 10%;
     cursor: pointer;
+    
 }
 
 .msg {
