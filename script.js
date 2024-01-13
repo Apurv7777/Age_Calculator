@@ -8,7 +8,7 @@ const handleSubmit = (e) => {
     let currentDate = new Date().getTime();
     if (inputDate < currentDate) {
         let diff = currentDate - inputDate;
-        let years = Math.floor(diff / (1000 * 60 * 60 * 24));
+        let years = Math.ceil(diff / (1000 * 60 * 60 * 24));
         if (years <= 365) {
             msg.innerHTML = 'Your age is : ' + years + ' days.';
         } else {
