@@ -12,7 +12,7 @@ const handleSubmit = (e) => {
         if (years <= 365) {
             msg.innerHTML = 'Your age is : ' + years + ' days.';
         } else {
-            msg.innerHTML = 'Your age is : ' + Math.ceil(years / 365) + ' years.';
+            msg.innerHTML = 'Your age is : ' + Math.floor(years / 365) + ' years.';
         }
     } else {
         msg.innerHTML = 'Please enter valid date !!';
